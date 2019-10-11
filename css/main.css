@@ -1,0 +1,96 @@
+main{
+    display:block;
+    height:100%;
+    background-color: #f5f5f5;
+    width: calc(100% - 300px);
+}
+main .main-content {
+    padding:30px;
+    width: 100%;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+    
+}
+
+.main-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.main-content::-webkit-scrollbar
+{
+	width: 11px;
+	background-color: #F5F5F5;
+}
+
+.main-content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #6e8efb;
+}
+
+
+.main-content .panel{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.panel-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.panel-50{
+    width: 48%;
+}
+
+.panel-row button{
+    height: 80px;
+    background: linear-gradient(135deg,#6e8efb,#474072);
+    font-size: 18px;
+    color: #fff;
+} 
+
+.panel-row button:hover{
+    transform: scale(1.10);
+    transition: 0.2s;
+} 
+
+.panel-basic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.panel-30{
+    width: 24.5%;
+}
+
+.panel-basic button{
+    height: 60px;
+    background: #6e8efb;
+    font-size: 18px;
+    color: #fff;
+} 
+
+.panel-basic button:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+} 
+
+div#ajax-content{
+    width:100%;
+}
