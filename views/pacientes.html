@@ -21,7 +21,7 @@
                             <i class="fas fa-home"></i>
                             <a href="default.html"> Dashboard</a>
                         </li>
-                        <li>
+                        <li class="selected">
                             <i class="fas fa-procedures"></i>
                             <a href="pacientes.html"> Pacientes</a>
                         </li>
@@ -46,10 +46,13 @@
                     <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a> 
                 </header>
                 <div class="main-content">
+                    <div class="main-content-title">
+                        <h2>Pacientes</h2>
+                    </div>
                     <div class="panel-basic">
                         <button class="panel panel-30" a-view="cadastrarPaciente" onclick="fetchContent(this)" a-folder="pacientes">Cadastrar Paciente</button>
-                        <button class="panel panel-30" a-view="listaPacientes" onclick="fetchContent(this)" a-folder="pacientes">Lista de Pacientes</button>
-                        <button class="panel panel-30" a-view="alertaLeitos" onclick="fetchContent(this)" a-folder="pacientes">Alerta dos Leitos</button>
+                        <button class="panel panel-30" a-view="listarPacientes" onclick="fetchContent(this)" a-folder="pacientes">Listar Pacientes</button>
+                        <button class="panel panel-30" a-view="alertaLeitos" onclick="fetchContent(this)" a-folder="pacientes">Alerta dos Quartos</button>
                         <button class="panel panel-30" a-view="relatorios" onclick="fetchContent(this)" a-folder="pacientes">Relatórios</button>
                     </div>
                     <div class="content" id="ajax-content">
@@ -61,6 +64,6 @@
         </div>
         <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="../plugins/fontawesome/js/all.min.js"></script>
-        <script src="../views/js/ajax.js"></script>
+        <script src="../js/ajax.js"></script>
     </body>
 </html>

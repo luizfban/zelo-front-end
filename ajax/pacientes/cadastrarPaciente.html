@@ -1,115 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="/css/all.css">
-        <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/plugins/fontawesome/css/all.min.css">
-        <title>Zelo</title>
-    </head>
-    <body>
-        <div class="flex-dashboard">
-            <sidebar>
-                <div class="sidebar-title">
-                    <h1>ZELO</h1>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <i class="fas fa-home"></i>
-                            <a href="default.html"> Dashboard</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-procedures"></i>
-                            <a href="pacientes.html"> Pacientes</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-users"></i>
-                            <a href="usuarios.html"> Usuários</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-cog"></i>
-                            <a href="configuracoes.html"> Configurações</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-undo-alt"></i>
-                            <a href="#"> Voltar</a>
-                        </li>
-                    </ul>
-                </div>
-            </sidebar>
-            <main>
-                <header>
-                    <a href="default.html"><i class="fas fa-home"></i> Dashboard</a>
-                    <a href="index.html"><i class="fas fa-sign-out-alt"></i>
-                        Logout</a>
-                </header>
-                <div class="main-content">
-                    <div class="panel-basic">
-                        <button class="panel panel-30"
-                            a-view="cadastrarPaciente"
-                            onclick="fetchContent(this)" a-folder="pacientes">Cadastrar
-                            Paciente</button>
-                        <button class="panel panel-30" a-view="listaPacientes"
-                            onclick="fetchContent(this)" a-folder="pacientes">Lista
-                            de Pacientes</button>
-                        <button class="panel panel-30" a-view="alertaLeitos"
-                            onclick="fetchContent(this)" a-folder="pacientes">Alerta
-                            dos Leitos</button>
-                        <button class="panel panel-30" a-view="relatorios"
-                            onclick="fetchContent(this)" a-folder="pacientes">Relatórios</button>
-                    </div>
-                    <div class="content" id="ajax-content">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Nome Completo</label>
-                                <input type="nome" class="form-control"
-                                    id="exampleFormControlInput1">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Sexo</label>
-                                <select class="form-control"
-                                    id="exampleFormControlSelect1">
-                                    <option>Masculino</option>
-                                    <option>Feminino</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlInput1">CPF</label>
-                                    <input type="nome" class="form-control"
-                                        id="exampleFormControlInput1">
-                             </div>
-                             <div class="form-group">
-                                    <label for="exampleFormControlInput1">Plano</label>
-                                    <input type="nome" class="form-control"
-                                        id="exampleFormControlInput1">
-                             </div>
-                             <div class="form-group">
-                                    <label for="exampleFormControlInput1">Convênio</label>
-                                    <input type="nome" class="form-control"
-                                        id="exampleFormControlInput1">
-                             </div>
-                             <div class="form-group">
-                                    <label for="exampleFormControlInput1">Local de Internação</label>
-                                    <input type="nome" class="form-control"
-                                        id="exampleFormControlInput1">
-                             </div>
-                             <div class="form-group">
-                                    <label for="exampleFormControlInput1">Enfermeiro</label>
-                                    <input type="nome" class="form-control"
-                                        id="exampleFormControlInput1">
-                             </div>
-                            <button type="submit" class="btn btn-primary">Salvar</button>
-                        </form>
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="nome">Nome Completo do Paciente</label>
+        <input type="text" class="form-control" id="nome">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="cpf">CPF</label>
+        <input type="number" class="form-control" id="cpf">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="nascimento">Data de Nascimento</label>
+        <input type="date" class="form-control" id="nascimento">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="internação">Data de Internação</label>
+        <input type="date" class="form-control" id="internação">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="sexo">Sexo</label>
+        <select id="sexo" class="form-control">
+          <option selected>Selecione...</option>
+          <option>Masculino</option>
+          <option>Feminino</option>
+        </select>
+      </div>
+    </div>
 
-                    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="Posto">Posto</label>
+        <input type="text" class="form-control" id="posto">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="quarto">Quarto</label>
+        <input type="text" class="form-control" id="quarto">
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="leito">Leito</label>
+        <input type="text" class="form-control" id="leito">
+      </div>
+    </div>
 
-                </div>
-            </main>
-        </div>
-        <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/plugins/fontawesome/js/all.min.js"></script>
-    </body>
-</html>
+    <div class="form-row">
+      <div class="form-group col-md-5">
+        <label for="plano">Plano de Saúde</label>
+        <input type="text" class="form-control" id="plano">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="convenio">Convênio</label>
+        <input type="text" class="form-control" id="convenio">
+        </select>
+      </div>
+    </div>
+    <button type="cadastrar" class="btn">Cadastrar</button>
+  </form>
