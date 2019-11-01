@@ -62,7 +62,11 @@ border:none;
 div.img{
     height:500px;
     width: 400px;
-    box-shadow: 0 0 2rem rgba(0 , 0 , 0 ,0.1);  
+    box-shadow: 0 0 2rem rgba(0 , 0 , 0 ,0.1); 
+    background-image: url(/zelo-front-end/imagens/enefrmeira2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
