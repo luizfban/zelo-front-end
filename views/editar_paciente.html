@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet"
+            href="../plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+        <title>Zelo</title>
+    </head>
+    <body>
+        <div class="flex-dashboard">
+            <sidebar>
+                <div class="sidebar-title">
+                    <h1>ZELO</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <i class="fas fa-home"></i>
+                            <a href="default.html"> Dashboard</a>
+                        </li>
+                        <li  class="selected">
+                            <i class="fas fa-procedures"></i>
+                            <a href="pacientes.html"> Pacientes</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <a href="usuarios.html"> Usuários</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-cog"></i>
+                            <a href="configuracoes.html"> Configurações</a>
+                        </li>
+                    </ul>
+                </div>
+            </sidebar>
+            <main>
+                <header>
+                    <a href="default.html"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="index.html"><i class="fas fa-sign-out-alt"></i>
+                        Logout</a>
+                </header>
+                <div class="main-content">
+                    <div class="main-content-title">
+                        <h2>Editar Paciente</h2>
+                    </div>
+
+                    <div class="panel-basic">
+                    </div>
+                    <div class="perfil-parent">
+                        <div class="perfil">
+                            <div class="perfil-form">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="card bg-dark text-white">
+                                            <div class="card-body text-center">Paciente</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xl-8">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="card">
+                                                    <div class="card-header">Paciente</div>
+                                                    <div class="card-body">José da Silva</div> 
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-xl-4">
+                                                <div class="card">
+                                                    <div class="card-header">CPF</div>
+                                                    <div class="card-body">123.456.789-09</div> 
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-xl-4">
+                                                <div class="card">
+                                                    <div class="card-header">Nascimento</div>
+                                                    <div class="card-body">18/04/1996</div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="offset-xl-4 col-xl-4">
+                                                <div class="card">
+                                                    <div class="card-header">Sexo</div>
+                                                    <div class="card-body">Masculino</div> 
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-xl-4">
+                                                <div class="card">
+                                                    <div class="card-header">Data de Internação</div>
+                                                    <div class="card-body">23/20/2019</div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="offset-xl-4 col-xl-4">
+                                                <div class="card">
+                                                    <div class="card-header">Convênio/Plano de Saúde</div>
+                                                    <div class="card-body">SUS</div> 
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-xl-4">
+                                                <div class="card">
+                                                    <div class="card-header">Local</div>
+                                                    <div class="card-body">Posto 01/Quarto 2/Leito 10</div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="card">
+                                            <div class="card-header bg-warning text-white text-center">Legenda</div>
+                                            <div class="card-body">
+                                                <p>
+                                                    SEM RISCO: Braden > 16
+                                                    <br>
+                                                    VERDE: Status OK
+                                                    <br>
+                                                    VERMELHO: Status ALERTAS
+                                                </p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="card bg-dark text-white">
+                                            <div class="card-body text-center">Cálculo de Braden</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xl-10">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Percepção Sensorial</th>
+                                                    <th>Umidade</th>
+                                                    <th>Atividade</th>
+                                                    <th>Mobilidade</th>
+                                                    <th>Nutrição</th>
+                                                    <th>Fricção e Cisalhamento</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Pouco limitada</td>
+                                                    <td>Ocasionalmente molhada</td>
+                                                    <td>Acamado</td>
+                                                    <td>Bastante Limitada</td>
+                                                    <td>Muito Pobre</td>
+                                                    <td>Problema Potencial</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-xl-2">
+                                        <div class="card bg-danger text-white">
+                                            <div class="card-body text-center">Braden: 12</div>
+                                        </div>
+                                        <button type="button" class="btn btn btn-outline btn-sm btn-block">Modificar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../plugins/fontawesome/js/all.min.js"></script>
+        <script src="../js/ajax.js"></script>
+    </body>
+</html>
